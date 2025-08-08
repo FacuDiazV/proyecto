@@ -7,23 +7,24 @@
   <link rel="stylesheet" href="./assets/styles/styles.css" />
 </head>
 <body>
-  <header>
-    <img src="./assets/img/logo_petsalud.jpg" alt="Logo de PetSalud" title="Logo de PetSalud" class="logo" />
-    <h1>PetSalud</h1>
-    <p>Tu cobertura veterinaria de confianza</p>
+<header>
+  <img src="./assets/img/logo_petsalud.jpg" alt="Logo de PetSalud" title="Logo de PetSalud" class="logo" />
+  <h1>PetSalud</h1>
+  <p>Tu cobertura veterinaria de confianza</p>
 
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <!-- Botón hamburguesa siempre visible -->
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
-    <nav>
-      <ul id="nav-list">
-        <li><a href="./assets/pages/planes.html">Planes</a></li>
-        <li><a href="./assets/pages/afiliate.html">Afiliate</a></li>
-        <li><a href="./assets/pages/sobre_nosotros.html">Nosotros</a></li>
-        <li><a href="./assets/pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <!-- Menú de navegación -->
+  <nav class="nav">
+    <ul id="nav-list">
+      <li><a href="./assets/pages/planes.html">Planes</a></li>
+      <li><a href="./assets/pages/afiliate.html">Afiliate</a></li>
+      <li><a href="./assets/pages/sobre_nosotros.html">Nosotros</a></li>
+      <li><a href="./assets/pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
   <main>
     <img src="./assets/img/banner_mascotas.jpg" alt="Mascotas felices" title="Cobertura veterinaria" />
 
@@ -45,7 +46,6 @@
   </footer>
 
   <script>
-    // Menú hamburguesa toggle
     const menuToggle = document.getElementById('menu-toggle');
     const navList = document.getElementById('nav-list');
 
@@ -79,6 +79,7 @@
         form.reset();
       }, 3000);
     });
+
   </script>
 </body>
 </html>
