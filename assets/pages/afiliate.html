@@ -4,34 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>GatitosFriendly</title>
+    <title>Afiliate - PetSalud</title>
 </head>
 <body>
     <header>
         <li><a href="../../index.html" class="nav-home">Home</a></li>
-       
-        <h1>Tienda</h1>
+        <h1>Afiliate a PetSalud</h1>
         <nav>
             <ul>
-                 <li><a href="./galeria.html">Galería</a></li>
-                 <li><a href="./contacto.html">Contacto</a></li>
-                 <li><a href="./tienda.html">Tienda</a></li>
-                 <li><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
-                
+                <li><a href="./planes.html">Planes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./sobre_nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
-   
     </header>
 
     <main>
-        <img src="../img/gato.jpg" alt="Logo de gatitos" title="Logo de gatitos">
-        <p>En esta seccion podes encontrar todos nuestros productos relacionados con gatitos. Haciendo una compra podes ayudar a nuestro refugio y poder seguir rescatando gatitos.</p>
+        <h2>Formulario de Afiliación</h2>
+        <p>Completá el formulario para brindarle a tu mascota la protección que se merece.</p>
 
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos del titular</legend>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de la mascota</legend>
+                <label for="nombreMascota">Nombre de la mascota:</label>
+                <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+                <label for="tipo">Tipo de mascota:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Seleccionar</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="edad">Edad (en años):</label>
+                <input type="number" id="edad" name="edad" min="0">
+            </fieldset>
+
+            <fieldset>
+                <legend>Plan elegido</legend>
+                <label for="plan">Seleccioná un plan:</label>
+                <select id="plan" name="plan" required>
+                    <option value="">Seleccionar</option>
+                    <option value="basico">Plan Básico</option>
+                    <option value="intermedio">Plan Intermedio</option>
+                    <option value="premium">Plan Premium</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Enviar afiliación</button>
+        </form>
     </main>
-    
+
     <footer>
-        <H2>Derechos Reservados</H2>
+        <h2>© 2025 PetSalud - Todos los derechos reservados</h2>
     </footer>
-    
 </body>
 </html>
